@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Contacto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f6f5f3] font-sans">
+
+  <div class="min-h-screen flex">
+    <!-- FORMULARIO -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-10 bg-[#e4e1d5]">
+        <form id="form-contacto" class="w-full max-w-md bg-white p-8 rounded-lg shadow-md border border-[#bcb8aa]">
+        
+        <h2 class="text-2xl font-bold text-[#2f4858] mb-6">Battle Bread Store <br>Contáctanos</h2>
+
+        <div class="mb-4">
+          <label for="nombre" class="block text-[#5a4e3c] font-medium mb-1">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required
+                 class="w-full px-4 py-2 border border-[#bcb8aa] rounded focus:outline-none focus:ring-2 focus:ring-[#3c6e71]" />
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block text-[#5a4e3c] font-medium mb-1">Email</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full px-4 py-2 border border-[#bcb8aa] rounded focus:outline-none focus:ring-2 focus:ring-[#3c6e71]" />
+        </div>
+
+        <div class="mb-4">
+          <label for="mensaje" class="block text-[#5a4e3c] font-medium mb-1">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required rows="4"
+                    class="w-full px-4 py-2 border border-[#bcb8aa] rounded focus:outline-none focus:ring-2 focus:ring-[#3c6e71]"></textarea>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-[#2f4858] text-white py-2 rounded hover:bg-[#3c6e71] transition duration-200">
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <!-- CARRUSEL DE IMÁGENES -->
+    <div class="w-1/2 hidden md:block relative overflow-hidden">
+    <img id="carrusel-img" src="assets/carrusel1.jpeg" alt="Carrusel"
+     class="w-full h-[695px] object-cover transition-opacity duration-500" />   
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
